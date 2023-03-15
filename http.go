@@ -23,10 +23,10 @@ type Session struct {
 }
 
 type Response struct {
-	Time   string        `json:"time"`
-	Status string        `json:"status"`
-	Detail string        `json:"detail"`
-	Result []interface{} `json:"result"`
+	Time   string                   `json:"time"`
+	Status string                   `json:"status"`
+	Detail string                   `json:"detail"`
+	Result []map[string]interface{} `json:"result"`
 }
 
 func CreateSession(
